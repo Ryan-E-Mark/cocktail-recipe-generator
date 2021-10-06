@@ -5,10 +5,12 @@ body {
 
 h1 {
   font-size: 3.5rem;
+  margin: 5% 0 0 0;
 }
 
 h4 {
   font-size: 2rem;
+  margin: 0;
 }
 
 p {
@@ -17,7 +19,8 @@ p {
 
 span {
   font-weight: bold;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
+  text-decoration: underline;
 }
 
 ul { 
@@ -47,6 +50,7 @@ button {
   align-items: center;
   justify-content: center;
   width: 100%;
+
 }
 
 .app-header {
@@ -55,6 +59,7 @@ button {
   align-items: center;
   justify-content: center;
   padding: 1%;
+  margin-bottom: 2%;
 }
 
 .drink-card {
@@ -72,8 +77,8 @@ button {
 }
 
 .drink-instructions {
-  text-align: center;
-
+  width: 50%;
+  margin: auto;
 }
 
 .ing {

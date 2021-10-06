@@ -27,12 +27,15 @@ const DrinkCard = (props) => {
                                 <li>{drink.strMeasure7} {drink.strIngredient7}</li>
                                 <li>{drink.strMeasure8} {drink.strIngredient8}</li>
                                 <li>{drink.strMeasure9} {drink.strIngredient9}</li>
+                                <li>{drink.strMeasure10} {drink.strIngredient10}</li>
+                                <li>{drink.strMeasure11} {drink.strIngredient11}</li>
+                                <li>{drink.strMeasure12} {drink.strIngredient12}</li>
                             </ul>
                         </div>
                     </div>
                 </div>
                 <div className="drink-instructions">
-                    <p>Instructions: {drink.strInstructions}</p>
+                    <p><span>Instructions: </span> {drink.strInstructions}</p>
                 </div>
             </div>
     )
