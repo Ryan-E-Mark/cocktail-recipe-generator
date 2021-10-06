@@ -1,10 +1,7 @@
-
 import './App.css';
 import DrinkCard from './components/drinkCard';
 import Fetching from './components/fetching';
-import axios from 'axios';
 import { fetchDrink } from './actions';
-
 import { connect } from 'react-redux';
 
 function App(props) {
@@ -14,14 +11,14 @@ function App(props) {
   }
 
   return (
-    <div>
-      <h1>Random Drink Generator!</h1>
-      { props.fetching ? <Fetching /> : <span></span> }
-      { props.drink.length != 0 ? <DrinkCard /> : <span></span> }
-      <div>
+    <div className="app-container">
+      <div className="app-header">
+        <h1>Random Drink Generator!</h1>
         <p>Click to generate a random drink recipe.</p>
         <button onClick={handleClick}>Randomize!</button>
       </div>
+      { props.fetching ? <Fetching /> : <span></span> }
+      { props.drink.length != 0 ? <DrinkCard /> : <span></span> }
     </div>
     
   );
