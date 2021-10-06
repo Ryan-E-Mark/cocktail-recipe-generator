@@ -2,9 +2,9 @@ import { FETCH_START, FETCH_SUCCESS, FETCH_FAIL } from "../actions";
 
 
 const initialState = {
-    drink: {
+    drink: [
 
-    },
+    ],
     fetching: false,
     error: ''
 };
@@ -14,17 +14,23 @@ const reducer = (state = initialState, action) => {
         case FETCH_START:
             return {
                 ...state,
-                drink: {},
+                drink: [],
                 fetching: true,
                 error: ''
             }
         case FETCH_SUCCESS:
-            return (
-                console.log('yup')
-            )
+            return {
+                ...state,
+                drink: action.payload,
+                fetching: false,
+                error: ''
+            }
         case FETCH_FAIL:
             return {
-
+                ...state,
+                drink: [],
+                fetching: false,
+                error: action.payload
             }
         default:
             return state;

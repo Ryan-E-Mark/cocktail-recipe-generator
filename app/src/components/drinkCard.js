@@ -1,11 +1,25 @@
 import React from 'react';
+import axios from 'axios';
+import { connect } from 'react-redux';
 
-const DrinkCard = () => {
+const DrinkCard = (props) => {
+
+    const { drink } = props;
+
+    console.log(drink);
     return(
         <div>
-            <h3>Todays drink is: </h3>
+            <h3>Todays drink is: {drink.strDrink}</h3>
+            
         </div>
     )
 }
 
-export default DrinkCard;
+const mapStatetoProps = (state) => {
+    return {
+        drink: state.drink,
+    }
+}
+
+
+export default connect(mapStatetoProps)(DrinkCard);
