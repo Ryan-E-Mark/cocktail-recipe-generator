@@ -1,0 +1,89 @@
+body {
+  font-size: 62.5%;
+  font-family: 'Itim', cursive;
+}
+
+h1 {
+  font-size: 3.5rem;
+  margin: 5% 0 0 0;
+}
+
+h4 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+p {
+  font-size: 1.25rem;
+}
+
+span {
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-decoration: underline;
+}
+
+ul { 
+  margin-right: 5%;
+}
+
+li {
+  font-size: 1.25rem;
+  list-style: none;
+  padding-top: 1.2%;
+}
+
+img {
+  width: 500px;
+  border-radius: 5px;
+}
+
+button {
+  font-size: 1rem;
+  padding: 1%;
+  font-family: 'Itim';
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
+}
+
+.app-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1%;
+  margin-bottom: 2%;
+}
+
+.drink-card {
+  width: 100%;
+}
+
+.drink-top {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.drink-info {
+  margin-left: 2%;
+}
+
+.drink-instructions {
+  width: 50%;
+  margin: auto;
+}
+
+.ing {
+  display: inline-block;
+  position: relative;
+  right: 35px;
+  width: 100%;
+}
