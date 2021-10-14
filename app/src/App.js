@@ -18,7 +18,7 @@ function App(props) {
         <button onClick={handleClick}>Randomize!</button>
       </div>
       { props.fetching ? <Fetching /> : <span></span> }
-      { props.drink.length != 0 ? <DrinkCard /> : <span></span> }
+      { props.drink.length !== 0 ? <DrinkCard /> : <span></span> }
     </div>
     
   );
