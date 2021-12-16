@@ -35,7 +35,7 @@ const DrinkCard = (props) => {
                     </div>
                 </div>
                 <div className="drink-instructions">
-                    <p><span>Instructions: </span> {drink.strInstructions}</p>
+                    <p><span className='underline'>Instructions: </span> {drink.strInstructions}</p>
                 </div>
             </div>
     )
