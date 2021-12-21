@@ -16,7 +16,7 @@ function App(props) {
       <div className="app-header">
         <h1>Random Drink Generator!</h1>
         <p>Click to generate a random drink recipe.</p>
-        <button onClick={handleClick}>Randomize!</button>
+        <button className="btn" onClick={handleClick}>Randomize!</button>
       </div>
       { props.fetching ? <Fetching /> : <span></span> }
       { props.drink.length !== 0 ? <DrinkCard /> : <span></span> }

@@ -13,11 +13,11 @@ const DrinkCard = (props) => {
                     </div>
                     <div className="drink-info">
                         <h4>{drink.strDrink}</h4>
-                        <p>Category: {drink.strCategory}</p>
-                        <p>{drink.strAlcoholic}</p>
-                        <p>Recommended serving glass: {drink.strGlass}</p>
+                        <p><span className='b-font'>Category:</span> {drink.strCategory}</p>
+                        <p><span className='b-font'>{drink.strAlcoholic}</span></p>
+                        <p><span className='b-font'>Recommended serving glass:</span> {drink.strGlass}</p>
                         <div className="ing">
-                            <ul><span>Ingredients</span>
+                            <ul><span className='underline'>Ingredients</span>
                                 <li>{drink.strMeasure1} {drink.strIngredient1}</li>
                                 <li>{drink.strMeasure2} {drink.strIngredient2}</li>
                                 <li>{drink.strMeasure3} {drink.strIngredient3}</li>
@@ -35,7 +35,7 @@ const DrinkCard = (props) => {
                     </div>
                 </div>
                 <div className="drink-instructions">
-                    <p><span>Instructions: </span> {drink.strInstructions}</p>
+                    <p><span className='underline'>Instructions: </span> {drink.strInstructions}</p>
                 </div>
             </div>
     )
