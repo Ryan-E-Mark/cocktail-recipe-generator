@@ -126,8 +126,8 @@ img {
   }
 
   ul { 
-    margin-right: 5%;
-
+    margin-left: 10%;
+    padding: 0;
   }
   
   li {
@@ -142,6 +142,19 @@ img {
     align-items: center;
     justify-content: center;
     width: 100%;
+  }
+
+  .drink-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    padding-left: 10%;
+  }
+
+  .drink-instructions {
+    width: 90%;
+    margin: -8% 6% 0;
   }
 
   .drink-pic {
