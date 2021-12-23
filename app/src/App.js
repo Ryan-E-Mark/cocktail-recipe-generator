@@ -15,11 +15,12 @@ function App(props) {
     <div className="app-container">
       <div className="app-header">
         <h1>Random Drink Generator!</h1>
-        <p>Click to generate a random drink recipe.</p>
+        <p>Click to generate a random cocktail recipe.</p>
         <button className="btn" onClick={handleClick}>Randomize!</button>
       </div>
       { props.fetching ? <Fetching /> : <span></span> }
       { props.drink.length !== 0 ? <DrinkCard /> : <span></span> }
+      <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
     </div>
     
   );
