@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import Footer from './components/footer';
 import reportWebVitals from './reportWebVitals';
 import { createStore, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
@@ -15,6 +16,7 @@ ReactDOM.render(
   <Provider store={store}>
     <React.StrictMode>
       <App />
+      <Footer />
     </React.StrictMode>
   </Provider>,
   document.getElementById('root')
